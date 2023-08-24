@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <title>Minninggate Capital - Pricing</title>
+</head>
+<body>
+
+  <nav class="navbar" id="top">
+    <div class="brand">
+        <a href="#">
+            <img src="minninggatelogo1.PNG" alt="mininggatecapitallogo">
+        </a>
+    </div>
+    <div class="navlinks">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="authlinks">
+        <ul>
+            <li><a href="login.html">Login
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     fill="none" 
+                     viewBox="0 0 24 24" 
+                     stroke-width="1.5" 
+                     stroke="currentColor" 
+                     class="loginicon">
+                <path stroke-linecap="round" 
+                      stroke-linejoin="round" 
+                      d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                </svg>
+            </a></li>
+            <li><a href="signup.html">Sign Up 
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     fill="none" 
+                     viewBox="0 0 24 24" 
+                     stroke-width="1.5" 
+                     stroke="currentColor" 
+                     class="signupicon">
+                <path stroke-linecap="round" 
+                      stroke-linejoin="round" 
+                      d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                </svg>
+            </a></li>
+        </ul>
+    </div>
+    <button id="toggglebutton">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+             fill="none" 
+             viewBox="0 0 24 24" 
+             stroke-width="1.5" 
+             stroke="currentColor" 
+             class="openIcon">
+
+         <path stroke-linecap="round" 
+              stroke-linejoin="round" 
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            class="closeIcon">
+
+         <path stroke-linecap="round" 
+               stroke-linejoin="round" 
+               d="M6 18L18 6M6 6l12 12" />
+        </svg>               
+    </button>
+</nav>
+
+<div class="intro">
+  <h1>Welcome To <span>Mininggate capiital</span></h1>
+</div>
+
+
+<div class="form-info">
+    <h2>Create your account</h2>
+    <form action="https://formspree.io/f/xjvqybez" method="post" onsubmit="return validateForm();">
+<!-- Name -->
+<label for="first_name">First Name:</label><br>
+<input type="text" id="first_name" name="first_name" class="form-input" placeholder="Enter First Name" required> <br>
+<span id="firstNameError" class="error-message"></span><br>
+
+<label for="last_name">Last Name:</label><br>
+<input type="text" id="last_name" name="last_name" class="form-input" placeholder="Enter Last Name" required> <br>
+<span id="lastNameError" class="error-message"></span>
+<br>
+
+<!-- Username -->
+<label for="username">Username:</label><br>
+<input type="text" id="username" name="username" class="form-input" placeholder="Enter Username" required><br>
+<span id="usernameError" class="error-message"></span>
+<br>
+
+<!-- Date of Birth -->
+<label for="dob">Date of Birth:</label><br>
+<input type="date" id="dob" name="dob" class="form-input" placeholder="Input DOB" required><br>
+<span id="dobError" class="error-message"></span>
+<br>
+
+<!-- Country -->
+<label for="country">Country:</label><br>
+<input type="text" id="country" name="country" class="form-input" placeholder="Enter Country" required><br>
+<span id="countryError" class="error-message"></span>
+<br>
+
+<!-- Phone Number (Optional) -->
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter Phone Number"><br>
+<span id="phoneError" class="error-message"></span>
+<br>
+
+<!-- Email -->
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" class="form-input" placeholder="Enter Valid Email" required><br>
+<span id="emailError" class="error-message"></span>
+<br>
+
+<!-- Password -->
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password" class="form-input" placeholder="Enter Password" required><br>
+<span id="passwordError" class="error-message"></span>
+<br>
+
+<!-- Re-enter Password -->
+<label for="confirm_password">Re-enter Password:</label><br>
+<input type="password" id="confirm_password" name="confirm_password" class="form-input" placeholder="Re-enter Password" required><br>
+<span id="confirmPasswordError" class="error-message"></span>
+<br>
+
+<!-- Remember Me -->
+<label for="remember_me">Remember Me:</label>
+<input type="checkbox" id="remember_me" name="remember_me" class="remeberme-form-input">
+<br>
+
+<!-- Plan Options -->
+<label for="plan">Choose a plan:</label> <br>
+<select id="plan" name="plan" class="form-input">
+  <option value="secure_starters">Secure Starters</option>
+  <option value="balanced_builders">Balanced Builders</option>
+  <option value="growth_maximizers">Growth Maximizers</option>
+  <option value="ethical_impact_investors">Ethical Impact Investors</option>
+  <option value="tech_innovators">Tech Innovators</option>
+  <option value="global_explorers">Global Explorers</option>
+</select>
+<br>
+
+
+<!-- Captcha -->
+<div class="h-captcha" data-sitekey="1bbfb023-d3a8-4d28-ba25-53a180ac1c14" aria-required="true"></div>
+
+<input type="submit" value="Sign Up" onclick="return validateForm();" class="sign-up">
+    </form>
+    
+  </div>
+
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script src="signup.js"></script>
+</body>
+</html>

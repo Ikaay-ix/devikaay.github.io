@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="faq.css">
+    <title>Minninggate Capital - FAQ</title>
+</head>
+<body>
+
+    <nav class="navbar" id="top">
+        <div class="brand">
+          <a href="#">
+            <img src="minninggatelogo1.PNG" alt="mininggatecapitallogo">
+        </a>
+        </div>
+        <div class="navlinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="authlinks">
+            <ul>
+                <li><a href="#">Login
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                         fill="none" 
+                         viewBox="0 0 24 24" 
+                         stroke-width="1.5" 
+                         stroke="currentColor" 
+                         class="loginicon">
+                    <path stroke-linecap="round" 
+                          stroke-linejoin="round" 
+                          d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                    </svg>
+                </a></li>
+                <li><a href="signup.html">Sign Up 
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                         fill="none" 
+                         viewBox="0 0 24 24" 
+                         stroke-width="1.5" 
+                         stroke="currentColor" 
+                         class="signupicon">
+                    <path stroke-linecap="round" 
+                          stroke-linejoin="round" 
+                          d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+        <button id="toggglebutton">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                 fill="none" 
+                 viewBox="0 0 24 24" 
+                 stroke-width="1.5" 
+                 stroke="currentColor" 
+                 class="openIcon">
+    
+             <path stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="closeIcon">
+    
+             <path stroke-linecap="round" 
+                   stroke-linejoin="round" 
+                   d="M6 18L18 6M6 6l12 12" />
+            </svg>               
+        </button>
+    </nav>
+
+    <section class="section1">
+        <div class="section1-text">
+            <h1>FAQ</h1>
+            <p>Welcome to Minninggate Capital's FAQ section! 
+                We've compiled a list of common questions to 
+                provide you with quick and comprehensive answers. 
+                If you have any additional queries or need further 
+                clarification, feel free to contact our dedicated 
+                support team.</p>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="section2-faq1">
+            <div class="faq1-text1">
+              <details onclick="toggleDetails('details1')">
+                  <summary id="summary">What is Minninggate Capital, and what services do you offer?</summary>
+                  <p>Minninggate Capital is an investments company that aims to empower individuals and businesses with smart investment solutions. We offer a range of services, including investment management, retirement planning, wealth preservation, and business advisory.</p>
+                </details>
+            </div>
+            <div class="faq1-text2">
+              <details onclick="toggleDetails('details2')">
+                  <summary id="summary">How is Minninggate Capital different from other investment firms?</summary>
+                  <p>At Minninggate Capital, we differentiate ourselves through our client-centric approach, personalized investment solutions, and commitment to transparency. Our team of seasoned financial professionals leverages cutting-edge technology and innovative strategies to deliver exceptional results for our clients.</p>
+                </details>
+            </div>
+            <div class="faq1-text3">
+              <details onclick="toggleDetails('details3')">
+                  <summary id="summary"> How do I get started with Minninggate Capital's services?</summary>
+                  <p>Getting started with us is easy! Simply reach out to our team through the contact information provided on our website, and we will guide you through the onboarding process. Our experts will understand your financial goals, risk tolerance, and investment preferences to design a personalized plan for you.</p>
+                </details>
+            </div>
+            <div class="faq1-text4">
+              <details onclick="toggleDetails('details4')">
+                  <summary id="summary">Is Minninggate Capital open to individual investors and businesses?</summary>
+                  <p>Yes, absolutely! Whether you are an individual investor looking to secure your financial future or a business seeking expert financial guidance, Minninggate Capital caters to all clients.</p>
+                </details>
+            </div>
+            <div class="faq1-text5">
+              <details onclick="toggleDetails('details5')">
+                  <summary id="summary">How are my investments managed, and how often will I receive updates?</summary>
+                  <p>Your investments will be managed by our team of experienced professionals who will continuously monitor market conditions and adjust your portfolio as needed. We believe in transparency, and you will receive regular updates on your investments' performance, as well as comprehensive reports.</p>
+                </details>
+            </div>
+        </div>
+        <div class="section2-faq2">
+          <div class="faq2-text6">
+              <details onclick="toggleDetails('details6')">
+                  <summary id="summary">What types of investments does Minninggate Capital offer?</summary>
+                  <p>Minninggate Capital provides access to a wide range of investment options, including stocks, bonds, alternative investments, and more. We tailor these options to suit your unique financial goals and risk tolerance.</p>
+                </details>
+            </div>
+            <div class="faq2-text7">
+              <details onclick="toggleDetails('details7')">
+                  <summary id="summary">How does Minninggate Capital prioritize security and data protection?</summary>
+                  <p>At Minninggate Capital, the security of your data is of utmost importance to us. We implement industry-leading security measures and follow strict protocols to safeguard your personal and financial information.</p>
+                </details>
+            </div>
+            <div class="faq2-text8">
+              <details onclick="toggleDetails('details8')">
+                  <summary id="summary">Can I make changes to my investment plan as my circumstances change?</summary>
+                  <p>Absolutely! Life is dynamic, and we understand that your financial goals may evolve over time. We offer flexibility in our investment plans and will work with you to make adjustments as needed to align with your changing circumstances</p>
+                </details>
+            </div>
+            <div class="faq2-text9">
+              <details onclick="toggleDetails('details9')">
+                  <summary id="summary">What fees are associated with Minninggate Capital's services?</summary>
+                  <p>Our fees are based on the specific services you choose and will be discussed with complete transparency during the initial consultation. We believe in clear and upfront communication, ensuring you are fully aware of any charges.</p>
+                </details>
+            </div>
+            <div class="faq2-text10">
+              <details onclick="toggleDetails('details10')">
+                  <summary id="summary">How can I get in touch with Minninggate Capital's support team?</summary>
+                  <p>You can contact our support team by phone or email, as provided on our website. We are available during business hours and will be happy to assist you with any inquiries or concerns you may have.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="section3-text">
+            <h2>Other frequently asked questions :</h2>
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="faqlist">
+            <div class="faq1">
+              <details onclick="toggleDetails('details1')">
+                <summary>What  is the minimum and maximum amount to deposit?</summary>
+                <p>The minimum deposit amount is $100, the maximum you can deposit at one time is $100,000 Per each deposit , Surely you can make deposit higher than $100,000 by several deposits.</p>
+              </details>
+            </div>
+            <div class="faq2">
+              <details onclick="toggleDetails('details1')">
+                <summary>What  is the minimum and maximum amount to withdraw?</summary>
+                <p>The minimum withdrawal is 0.001Ƀ and 0.01 For Perfectmoney ,Payeer. There is no maximum limit for withdrawal.</p>
+            </details>
+            </div>
+            <div class="faq3">
+              <details onclick="toggleDetails('details1')">
+                <summary>How do i request withdrawal?</summary>
+                <p>You can request a withdrawal by clicking the “Withdraw” button in the member's area and entering the amount you want to withdraw.</p>
+            </details>
+            </div>
+            <div class="faq4">
+              <details onclick="toggleDetails('details1')">
+                <summary>How can i change my payment address?</summary>
+                <p>You can change your payment withdrawal address by clicking the “Settings” button on the menu after logging in to your account. Enter your new payment address and save the changes. </p>
+            </details>
+            </div>
+            <div class="faq5">
+                <details onclick="toggleDetails('details1')">
+                  <summary>how can i see who my upline is?</summary>
+                  <p>You can see your upline by clicking on “Referrals”, and you will see the username of your upline. If there is no username there, it means you have no upline.</p>
+              </details>
+              </div>
+              <div class="faq6">
+                <details onclick="toggleDetails('details1')">
+                  <summary>How do i check my account balance?</summary>
+                  <p>You can see this anytime on your accounts dashboard. You can see this anytime on your accounts dashboard.</p>
+              </details>
+              </div>
+              <div class="faq7">
+                <details onclick="toggleDetails('details1')">
+                  <summary>How would i know that the withdrawal has been succesful?</summary>
+                  <p>You will get an automatic notification once we send the funds and you can always check your transactions or account balance. Your chosen payment system dictates how long it will take for the funds to reach you. You will get an automatic notification once we send the funds and you can always check your transactions or account balance. Your chosen payment system dictates how long it will take for the funds to reach you. </p>
+              </details>
+              </div>
+          </div>
+    </section>
+
+    <section class="section6">
+        <div class="section6-img">
+            <img src="referralimg.png" alt="referral img" srcset="">
+        </div>
+        <div class="section6-text">
+            <h2>Referral Comission!!!</h2>
+            <h3>Invite your friends and earn money through referrals!</h3>
+            <p>We designed our referral program to offer our investors
+                 an extra opportunity to earn money. By bringing in
+                  new investors to join our platform, our members can 
+                  benefit from an additional source of income. The program
+                   operates on a single level of participation, providing 
+                   a 10% commission for successful referrals.</p>
+            <a href="#">Send Referral link</a>
+        </div>
+    </section>
+
+    <section class="section9">
+        <div class="section9-text">
+            <h2>Brand & Payment Gateway</h2>
+            <h3>Our Payment Gateway</h3>
+            <p>For tech-savvy investors, 
+                we accept select cryptocurrencies as a payment method. 
+                You can use popular digital currencies such as Bitcoin 
+                (BTC), Ethereum (ETH), and others to fund your investments.</p>
+        </div>
+        <div class="section9-img">
+            <img src="paymentimg.png" alt="payment">
+        </div>
+    </section>
+
+    <footer class="section10">
+        <div class="section10-inner">
+            <a href="#">Minninggatecapital</a>
+            <p>At CapitalBarrs, we understand that navigating the complex world 
+                of investments can be daunting. That's why our dedicated team of 
+                financial experts is here to guide you every step of the way. 
+                Whether you're an experienced investor or just starting your 
+                investment journey, we provide personalized solutions tailored 
+                to your unique financial goals.</p>
+        <div class="footer-menu">
+            <div class="section10-support">
+                <h2>SUPPORT</h2>
+                <a href="tel:+1234567890">+1 (234) 567-890</a> <br>
+                <a href = "mailto: support@minninggatecapital.com">support@minninggatecapital.com</a>
+            </div>
+            <div class="section10-links">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="#">Privacy & Policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                </ul>
+            </div>
+        </div>
+            <span>COPYRIGHT © 2023. All Rights Reserved By Minninggatecapital Inc</span>
+        </div>
+    </footer>
+
+    <button class="backtotop scroll-link" href="#top">
+        <img src="up-arrow.png" alt="">
+      </button>
+
+                    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {
+    "symbols": [
+      {
+        "proName": "FOREXCOM:SPXUSD",
+        "title": "S&P 500"
+      },
+      {
+        "proName": "FOREXCOM:NSXUSD",
+        "title": "US 100"
+      },
+      {
+        "proName": "FX_IDC:EURUSD",
+        "title": "EUR to USD"
+      },
+      {
+        "proName": "BITSTAMP:BTCUSD",
+        "title": "Bitcoin"
+      },
+      {
+        "proName": "BITSTAMP:ETHUSD",
+        "title": "Ethereum"
+      }
+    ],
+    "showSymbolLogo": true,
+    "colorTheme": "light",
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+    
+    <script src="faq.js"></script>
+</body>
+</html>
